@@ -1,0 +1,163 @@
+.nav {
+    display: flex;
+    list-style: none;
+    max-width: 100%;
+    height:100px;
+    /* background-image: url("image.jpg"); */
+    background-color: #e3f2fd;
+    color:blanchedalmond;
+    font-size: large;
+  }
+  .icon {
+    width: 100px;
+    height: 70px;
+    margin-left: 6px;
+    margin-top: 13px;
+    
+  }
+  .list {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-right: 10px;
+    color: bisque;
+  }
+  .list:hover {
+    color: #fc2779;
+
+  }
+  .icon1 {
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .sign {
+    margin-left: 20px;
+    margin-top: 20px;
+    color:blanchedalmond;
+  }
+  .input {
+    /* margin-left: 10px; */
+        padding-top: 3%;
+        width: 100%;
+        text-align:center;
+
+  }
+
+  .list1 {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    margin-left: none;
+    /* background-color: black; */
+    height: 30px;
+    float:inline-end;
+    overflow: hidden;
+  }
+  .list2 {
+    margin-left: 1%;
+    color: black;
+    font-weight: bolder;
+    float:inline-end;
+    overflow: hidden;
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align:center;
+  }
+  .btn {
+    margin-left: 5%;
+    width: 100px;
+    background-color: black;
+    color:blanchedalmond;
+  }
+  .list2:hover {
+    color: #fc2779;
+    float:inline-end;
+    overflow: hidden;
+    text-align:center;
+  }
+
+
+  .btnn{
+    tab-size: 100%;
+    block-size: 15%;
+    font: bolder;
+    font-weight: bolder;
+    
+  }
+  
+  .list2 a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align:center;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .list2 .list2btn {
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  
+  .list2-content {
+    display: none;
+    position: absolute;
+    width: 50%;
+  }
+  
+  .list2-content a {
+    float: left;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    width: 50%;
+  }
+  
+  .list2-content a:hover {
+    background-color: #fc2779;
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .list2:hover .list2-content {
+    display: block;
+    width: 50%;
+  }
+
+
+
+  .navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #3bb19b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar h1 {
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  
+  .white_btn {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
