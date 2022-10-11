@@ -8,7 +8,6 @@ const Signup = () => {
 		firstName: "",
 		lastName: "",
 		email: "",
-		phoneno:"",
 		password: "",
 	});
 	const [error, setError] = useState("");
@@ -40,7 +39,7 @@ const Signup = () => {
 		<div className={styles.signup_container}>
 			<div className={styles.signup_form_container}>
 				<div className={styles.left}>
-					<h1>Welcome Back</h1>
+					<h1>Login Here..</h1>
 					<Link to="/login">
 						<button type="button" className={styles.white_btn}>
 							Sign In
@@ -78,15 +77,6 @@ const Signup = () => {
 							className={styles.input}
 						/>
 						<input
-							type="phoneno"
-							placeholder="Phoneno"
-							name="phoneno"
-							onChange={handleChange}
-							value={data.phoneno}
-							required
-							className={styles.input}
-						/>
-						<input
 							type="password"
 							placeholder="Password"
 							name="password"
@@ -107,3 +97,6 @@ const Signup = () => {
 };
 
 export default Signup;
+
+
+

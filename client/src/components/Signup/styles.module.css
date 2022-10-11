@@ -1,7 +1,8 @@
 .signup_container {
 	width: 100%;
 	min-height: 100vh;
-	background-color: #f5f5f5;
+	background-color: white;
+	background: linear-gradient(110deg, pink 60%, purple 60%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -12,8 +13,6 @@
 	height: 500px;
 	display: flex;
 	border-radius: 10px;
-	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
-		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
 }
 
 .left {
@@ -22,14 +21,14 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #3bb19b;
+	background-color: thistle;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
 
 .left h1 {
 	margin-top: 0;
-	color: white;
+	color: black;
 	font-size: 35px;
 	align-self: center;
 }
@@ -40,7 +39,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: white;
+	background-color: lavenderblush;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -62,7 +61,7 @@
 	width: 370px;
 	padding: 15px;
 	border-radius: 10px;
-	background-color: #edf5f3;
+	background-color: whitesmoke;
 	margin: 5px 0;
 	font-size: 14px;
 }
@@ -72,7 +71,7 @@
 	padding: 15px;
 	margin: 5px 0;
 	font-size: 14px;
-	background-color: #f34646;
+	background-color: red;
 	color: white;
 	border-radius: 5px;
 	text-align: center;
@@ -84,6 +83,7 @@
 	outline: none;
 	padding: 12px 0;
 	background-color: white;
+	color: black;
 	border-radius: 20px;
 	width: 180px;
 	font-weight: bold;
@@ -92,7 +92,7 @@
 }
 
 .green_btn {
-	background-color: #3bb19b;
+	background-color: teal;
 	color: white;
 	margin: 10px;
 }
