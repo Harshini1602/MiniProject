@@ -17,23 +17,14 @@ const Homepage = () => {
         <li>
           <img className="icon" src={Logo} alt="Logo" />
         </li>
-        <nav class="input">
-          <div class="container-fluid">
-            <form class="d-flex">
-              <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search"></input>
-              <button class="btnn" type="submit">Search</button></form></div></nav>
-{/* 
-              <div className={styles.main_container}>
-			<nav className={styles.navbar}>
-				<h1>HMY</h1>
-				<button className={styles.white_btn} onClick={handleLogout}>
-					Logout
-				</button>
-			</nav>
-		</div> */}
+        <nav className="input">
+          <div className="container-fluid">
+            <form className="d-flex">
+              <input className="form-control me-4" type="search" placeholder="Search" aria-label="Search"></input>
+              <button className="btnn" type="submit">Search</button></form></div></nav>
 
         <h4 className="list"><Link to={"/"}>Home </Link></h4>
-        <h4 className="list"><Link to={"/login"}>Login/Signup </Link></h4>
+        <h4 className="list"><Link to={"/adminuser"}>Login/Signup </Link></h4>
         <h4 className="list"><Link to={"/Orders"}>Orders </Link></h4>
         <h4 className="list"><Link to={"/Cart"}>Cart </Link></h4>
       </ul>

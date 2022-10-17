@@ -16,11 +16,11 @@ return (
         <li>
           <img className="icon" src={Logo} alt="Logo" />
         </li>
-	  	  <nav class="input">
-          <div class="container-fluid">
-            <form class="d-flex">
-              <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search"></input>
-              <button class="btnn" type="submit">Search</button></form></div></nav>
+	  	  <nav className="input">
+          <div className="container-fluid">
+            <form className="d-flex">
+              <input className="form-control me-4" type="search" placeholder="Search" aria-label="Search"></input>
+              <button className="btnn" type="submit">Search</button></form></div></nav>
 
 		<h4 className="list" color="black">WELCOME!!</h4>
         <h4 className="list" color="black" ><Link to={"/Orders"}>ORDERS </Link></h4>
