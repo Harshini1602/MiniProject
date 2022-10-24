@@ -24,7 +24,7 @@ function UpdateAudio({ _id, closeHandler, updateHandler }) {
 
   return (
     <form
-      className="form-container"
+      className="form-cont"
       onSubmit={(e) => {
         submitHanlder(e);
         updateHandler();

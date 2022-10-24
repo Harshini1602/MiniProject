@@ -1,0 +1,242 @@
+.nav {
+  display: flex;
+   list-style: none;
+   max-width: 100%;
+   height:90px;
+   color:blanchedalmond;
+   font-size: large;
+   /* background-color: #28282B; */
+   justify-content: space-around;
+  display:flex;
+  text-align: center;
+}
+
+.btn1{
+  background-color:	#198754;
+  /* width: 100px; */
+  /* background-color: black; */
+  color:white;
+  font-weight: bold;
+  height:40%;
+  text-decoration: none;
+  text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 5px;
+  justify-content: space-around;
+  display:flex;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 17px;
+}
+
+ .icon {
+   width: 283px;
+   height: 90px;
+   margin-left: 6px;
+   margin-top:0.04em;
+ }
+
+ .list {
+   /* margin-left: 15px;
+   margin-right: 15px; */
+   padding-right: 50px;
+   color: white;
+   font-size: 20px;
+   text-decoration: none;
+   /* padding-top: 9px;
+   padding-bottom: 1px; */
+   /* padding-left: 100px; */
+   /* margin-left: 50px; */
+   /* margin-right: 80px;  */
+   text-align: right;
+   padding-top: 36px;
+   padding-bottom: 1px;
+  font-weight: bold;
+ }
+
+
+ .list:hover {
+   color: black;
+
+ }
+ .icon1 {
+   height: 20px;
+   margin-right: 10px;
+   margin-left: 20px;
+   margin-top: 20px;
+ }
+ .sign {
+   margin-left: 20px;
+   margin-top: 20px;
+   color:blanchedalmond;
+ }
+ .input {
+   margin-left:0.05cm;
+   margin-right: 10px;
+       padding-top: 3%;
+       width: 430px;
+       text-align:center;
+       height: 40px;
+       justify-content: center;
+
+ }
+
+ .list1 {
+   display: flex;
+   list-style: none;
+   justify-content: left;
+   margin-left: none;
+   background-color: black;
+   height: 30px;
+   float:inline-end;
+   overflow: hidden;
+ }
+ .list2 {
+   margin-left: 1%;
+   color: black;
+   font-weight: bolder;
+   float:inline-end;
+   overflow: hidden;
+   padding-right: 70px;
+   padding-left: 70px;
+   text-align:center;
+ }
+ .btn {
+   margin-left: 5%;
+   /* width: 100px; */
+   /* background-color: black; */
+   color:white;
+   font-weight: bolder;
+   height:40%;
+   
+ }
+ .list2:hover {
+   color: black;
+   float:inline-end;
+   overflow: hidden;
+   text-align:center;
+ }
+
+
+ .btnn{
+   tab-size: 100%;
+   block-size: 15%;
+   font: bolder;
+   font-weight: bolder;
+ }
+ 
+ .list2 a {
+   float: left;
+   font-size: 16px;
+   color: wheat;
+   text-align:center;
+   text-decoration: none;
+   padding-right: 10px;
+   padding-left: 10px;
+ }
+
+ .list2 .list2btn {
+   border: none;
+   background-color: black;
+   color: wheat;
+   font-weight: bolder;
+   font-size: 16px;
+   padding-right: 50px;
+   padding-left: 50px;
+ }
+ 
+ 
+ .list2-content {
+   display: none;
+   position: absolute;
+   width: 50%;
+   color: bisque;
+ }
+ 
+ .list2-content a {
+   float: left;
+   color: bisque;
+   text-decoration: none;
+   font-weight: bolder;
+   width: 50%;
+ }
+ 
+ .list2-content a:hover {
+   background-color: #fc2779;
+   color: black;
+   font-weight: bolder;
+ }
+ 
+ .list2:hover .list2-content {
+   display: block;
+   width: 50%;
+ }
+
+
+
+ /* .navbar {
+   width: 100%;
+   height: 70px;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+  */
+ .navbar h1 {
+   color: white;
+   font-size: 25px;
+   margin-left: 20px;
+ }
+ 
+ .white_btn {
+   border: none;
+   outline: none;
+   padding: 12px 0;
+   background-color: white;
+   border-radius: 20px;
+   width: 120px;
+   font-weight: bold;
+   font-size: 14px;
+   cursor: pointer;
+   margin-right: 20px;
+ }
+
+
+.ahome{
+margin-left: 525px;
+}
+
+.btn2{
+    background-color:	#198754;
+    color:black;
+    font-weight: bold;
+    height:6%;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content:space-around;
+    position:absolute;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 17px;
+    margin-left: 40px;
+    float:right;
+    padding-left: 14px;
+    padding-right: 14px;
+
+}
+
+.home{
+  /*background-color: lightcyan;*/
+  /*padding-bottom: 69px;*/
+background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+background-repeat: no-repeat;
+background-attachment:fixed;
+/* padding-top: 140px; */
+background-size: auto;
+background-position: 100%;
+background-size: cover;
+padding-bottom: 109px;
+
+}

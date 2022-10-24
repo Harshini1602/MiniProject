@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import "./styles.css"
 
 function UpdateFruit({ _id, closeHandler, updateHandler }) {
   const [fruitInfo, setFruitInfo] = useState({ name: "", description: "", price: "" });
@@ -25,7 +24,7 @@ function UpdateFruit({ _id, closeHandler, updateHandler }) {
 
   return (
     <form
-      className="form-container"
+      className="form-cont"
       onSubmit={(e) => {
         submitHanlder(e);
         updateHandler();

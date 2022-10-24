@@ -39,7 +39,7 @@ const Signup = () => {
 		<div className={styles.signup_container}>
 			<div className={styles.signup_form_container}>
 				<div className={styles.left}>
-					<h1>Login Here..</h1>
+					<h5>Login Here..</h5>
 					<Link to="/login">
 						<button type="button" className={styles.white_btn}>
 							Sign In

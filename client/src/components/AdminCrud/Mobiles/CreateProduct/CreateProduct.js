@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import "./styles.css"
 import AdminHome from "../../AdminHome";
 
 const CreateProduct = () => {
-  const [productInfo, setProductInfo] = useState({ name: "", description: "", price: "", image: "" });
+  const [productInfo, setProductInfo] = useState({ name: "", description: "", price: "" });
 
   function handleChange(e) {
     setProductInfo((data) => ({ ...data, [e.target.name]: e.target.value }));
@@ -16,7 +15,7 @@ const CreateProduct = () => {
     axios
       .post("http://localhost:4000/mobiles/api/productapp", productInfo)
       .then((res) => {
-        setProductInfo({ title: "", description: "", price: "", image: "" });
+        setProductInfo({ title: "", description: "", price: "" });
         console.log(res.data.message);
       })
       .catch((err) => {
@@ -26,7 +25,7 @@ const CreateProduct = () => {
   };
 
   return (
-    <section className="container">
+    <section className="cont">
       <Link to="/displayproduct">
         <button type="button" className="todo-btn todo-btn-back">
           🔙 BACK
@@ -34,7 +33,7 @@ const CreateProduct = () => {
       </Link>
 
       <section className="todo-data">
-        <form onSubmit={handleSubmit} className="form-container" noValidate>
+        <form onSubmit={handleSubmit} className="form-cont" noValidate>
           <label className="label" htmlFor="name">
             PRODUCT NAME
           </label>
@@ -63,18 +62,6 @@ const CreateProduct = () => {
             type="text"
             name="price"
             value={productInfo.price}
-            onChange={handleChange}
-            className="input"
-          />
-
-          <label className="label" htmlFor="image">
-            PRODUCT IMAGE
-          </label>
-          <input
-            type="file"
-            name="image"
-            accept=".png, .jpg, .jpeg"
-            value={productInfo.image}
             onChange={handleChange}
             className="input"
           />

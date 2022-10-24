@@ -12,10 +12,11 @@ const fruit = require("./routes/Grocery/Fruitroutes.js");
 const vegetable = require("./routes/Grocery/Vegetableroutes.js");
 const audio = require("./routes/Electronics/Audioroutes");
 const charger = require("./routes/Electronics/Chargerroutes");
+const laptop = require("./routes/Electronics/Laptoproutes");
 
 
-const multer = require("multer");
-const {v4 : uuidv4 } = require("uuid");
+// const multer = require("multer");
+// const {v4 : uuidv4 } = require("uuid");
 
 
 
@@ -39,27 +40,28 @@ app.use("/grocery/api/fruitapp", fruit);
 app.use("/grocery/api/vegetableapp", vegetable);
 app.use("/electronics/api/audioapp", audio);
 app.use("/electronics/api/chargerapp", charger);
+app.use("/electronics/api/laptopapp", laptop);
 
 
 
-const storage = multer.diskStorage({
-    destination : function(req, file, cb){
-        cb(null , 'images');
-    },
-    filename: function(req, file, cb) {
-        cb(null, uuidv4() + '-' + Date.now() + path.extname(file.originalname));
-    }
-});
-const fileFilter = (req,file,cb) => {
-    const allowedFileTypes = ['image/jpeg', 'image/jpg', 'image/png'];
-    if(allowedFileTypes.includes(file.mimetype)) {
-        cb(null, true);
-    }
-    else{
-        cb(null, false);
-    }
-}
-let upload = multer({storage, fileFilter});
+// const storage = multer.diskStorage({
+//     destination : function(req, file, cb){
+//         cb(null , 'images');
+//     },
+//     filename: function(req, file, cb) {
+//         cb(null, uuidv4() + '-' + Date.now() + path.extname(file.originalname));
+//     }
+// });
+// const fileFilter = (req,file,cb) => {
+//     const allowedFileTypes = ['image/jpeg', 'image/jpg', 'image/png'];
+//     if(allowedFileTypes.includes(file.mimetype)) {
+//         cb(null, true);
+//     }
+//     else{
+//         cb(null, false);
+//     }
+// }
+// let upload = multer({storage, fileFilter});
 
 
 

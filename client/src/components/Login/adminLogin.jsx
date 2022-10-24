@@ -61,7 +61,7 @@ const AdminLogin = () => {
 					</form>
 				</div>
 				<div className={styles.right}>
-					<h1>New Here ?</h1>
+					<h3>New Here ?</h3>
 					<Link to="/adminsignup">
 						<button type="button" className={styles.white_btn}>
 							Admin Sign Up

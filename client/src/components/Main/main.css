@@ -1,0 +1,76 @@
+.logoutbutton {
+
+    text-decoration:none;
+    outline-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: right;
+    padding-top: 36px;
+    padding-bottom: 1px;
+    background-color:transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.welcome {
+    color: white;
+    padding-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: right;
+    padding-top: 36px;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
+
+.card{
+    background-color: black;
+}
+
+
+.footer{
+    padding:3px;
+    background-color: black;
+    color:#fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+    margin-right: 1500px;
+    padding-top: 2%;
+    flex-direction: column;
+  }
+
+  /* .footer p{
+    padding:15px;
+    background:black;
+    color:black;
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    text-align: center;
+    flex-direction: column;
+  } */
+
+  .socialMedia {
+    color: wheat;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    bottom: 0;
+    margin: auto 0;
+    text-align: center;
+    justify-content: space-evenly;
+    height:100%;
+  }

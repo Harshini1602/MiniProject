@@ -13,10 +13,6 @@ const ProductListSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  image: {
-    type: String,
-    required: true,
-  },
 });
 
 const AppProduct = mongoose.model("product", ProductListSchema);

@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./styles.module.css";
+//import "./styles.module.css";
+import "./styles1.css"
 
 
 const AdminUser = () => {
 
     return (
-        <div className="d-flex">
+        <div className="adminuser">
 
             <h1> Hey! Are you a Admin or User?</h1>
+            <br></br>
             <Link to = "/adminsignup">
-                <button type = "button" className="{styles.white_btn}" onClick = "/adminsignup">
+                <br></br>
+                <h1><button type = "button" className="userbtn" onClick = "/adminsignup">
                     ADMIN
-                </button>
+                </button></h1>
+                <br></br>
             </Link>
             <Link to = "/login">
-                <button type = "button" className="{styles.white_btn}" onClick = "/login">
+                <h1><button type = "button" className="userbtn" onClick = "/login">
                     USER
-                </button>
+                </button></h1>
             </Link>
         </div>
     )

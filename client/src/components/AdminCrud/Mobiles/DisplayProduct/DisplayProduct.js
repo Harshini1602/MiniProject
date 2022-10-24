@@ -3,7 +3,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import UpdateProduct from "../UpdateProduct";
 import ProductLists from "../ProductLists";
-import "./styles.css"
 
 export function DisplayProduct() {
   const [id, setId] = useState("");
@@ -59,7 +58,7 @@ export function DisplayProduct() {
         LOGOUT
       </button>
     </nav>
-    <section className="container">
+    <section className="cont">
       <Link to="/add-list" className="button-new">
         <button className="todo-btn">➕ ADD NEW PRODUCT</button>
       </Link>
@@ -77,7 +76,7 @@ export function DisplayProduct() {
         </ul>
       </section>
       {modal ? (
-        <section className="update-container">
+        <section className="update-cont">
           <div className="update-todo-data">
             <p onClick={closeHandler} className="close">
               &times;

@@ -13,7 +13,7 @@ const AudioLists = ({ audioInfos, editHandler, deleteHandler }) => {
         <h2>{price}</h2>
       </div>
       <h1></h1>
-      <div className="todo-btn-container">
+      <div className="todo-btn-cont">
         <button className="todo-btn" name={_id} onClick={editHandler}>
           🖊️
         </button>

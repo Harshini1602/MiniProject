@@ -25,7 +25,7 @@ const CreateCharger = () => {
   };
 
   return (
-    <section className="container">
+    <section className="cont">
       <Link to="/displaycharger">
         <button type="button" className="todo-btn todo-btn-back">
           🔙 BACK
@@ -33,7 +33,7 @@ const CreateCharger = () => {
       </Link>
 
       <section className="todo-data">
-        <form onSubmit={handleSubmit} className="form-container" noValidate>
+        <form onSubmit={handleSubmit} className="form-cont" noValidate>
           <label className="label" htmlFor="name">
             PRODUCT NAME
           </label>

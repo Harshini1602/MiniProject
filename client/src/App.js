@@ -1,9 +1,11 @@
 import { Route, Routes, Navigate } from "react-router-dom";
+// import "./App.css"
 import Signup from "./components/Signup/index.jsx";
 import Login from "./components/Login/index.jsx";
 import Homepage from "./components/Homepage/Homepage.jsx";
 import Main from "./components/Main/index.jsx"
 import Mobiles from "./components/Products/Mobiles/mobiles.jsx"
+// import Userprofile from "./components/User/Userprofile.jsx"
 import Fruits from "./components/Products/Grocery/Fruits/fruits.jsx"
 import Vegetables from "./components/Products/Grocery/Vegetables/Vegetables.jsx"
 import AdminUser from "./components/AdminUser.jsx/AdminUser";
@@ -24,6 +26,11 @@ import CreateCharger from "./components/AdminCrud/Electronics/ChargersCRUD/Creat
 import DisplayCharger from "./components/AdminCrud/Electronics/ChargersCRUD/DisplayCharger/DisplayCharger.js";
 import ChargerList from "./components/Products/Electronics/Charger/charger.jsx";
 import VegetableLists from "./components/AdminCrud/Grocery/VegetablesCRUD/VegetableLists/VegetableLists.js";
+import LaptopLists from "./components/Products/Electronics/Laptop/Laptoplist";
+import Laptop from "./components/Products/Electronics/Laptop/laptop.jsx";
+import CreateLaptop from "./components/AdminCrud/Electronics/LaptopsCRUD/CreateLaptop/CreateLaptop.js";
+import DisplayLaptop from "./components/AdminCrud/Electronics/LaptopsCRUD/DisplayLaptop/DisplayLaptop.js";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -35,12 +42,15 @@ function App() {
 			<Route path="/login" exact element={<Login />} />
 			<Route path="/main" exact element={<Main />} />
 			<Route path="/Mobiles" exact element={<Mobiles />} />
+			{/* <Route path="/Userprofile" exact element={<Userprofile />} /> */}
 			<Route path="/Fruits" exact element={<Fruits />} />
+			<Route path="/Laptops" exact element={<Laptop />} />
 			<Route path="/Vegetables" exact element={<Vegetables />} />
 			<Route path="/Fruits" exact element={<FruitsList />} />
 			<Route path="/Vegetables" exact element={<VegetableLists />} />
 			<Route path="/Audio" exact element={<AudioList />} />
 			<Route path="/Chargers" exact element={<ChargerList />} />
+			<Route path="/Laptops" exact element={<LaptopLists />} />
 			<Route path="/adminuser" exact element={<AdminUser />} />
 			<Route path="/adminsignup" exact element={<AdminSignup />} />
 			<Route path="/adminlogin" exact element={<AdminLogin />} />
@@ -55,6 +65,8 @@ function App() {
 			<Route path="/createaudio" element=<CreateAudio /> />
 			<Route exact path="/displaycharger" element=<DisplayCharger /> />
 			<Route path="/createcharger" element=<CreateCharger /> />
+			<Route path="/createlaptop" element=<CreateLaptop /> />
+			<Route exact path="/displaylaptop" element=<DisplayLaptop /> />
 			{/* <Route path="/login" element={<Navigate replace to="/main" />} /> */}
 		</Routes>
 	);

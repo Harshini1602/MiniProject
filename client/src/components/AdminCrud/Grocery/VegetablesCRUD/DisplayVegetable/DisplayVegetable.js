@@ -58,7 +58,7 @@ export function DisplayVegetable() {
         LOGOUT
       </button>
     </nav>
-    <section className="container">
+    <section className="cont">
       <Link to="/createvegetable" className="button-new">
         <button className="todo-btn">➕ ADD NEW VEGETABLE</button>
       </Link>
@@ -76,7 +76,7 @@ export function DisplayVegetable() {
         </ul>
       </section>
       {modal ? (
-        <section className="update-container">
+        <section className="update-cont">
           <div className="update-todo-data">
             <p onClick={closeHandler} className="close">
               &times;

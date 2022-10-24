@@ -58,7 +58,7 @@ export function DisplayFruit() {
         LOGOUT
       </button>
     </nav>
-    <section className="container">
+    <section className="cont">
       <Link to="/createfruit" className="button-new">
         <button className="todo-btn">➕ ADD NEW FRUIT</button>
       </Link>
@@ -76,7 +76,7 @@ export function DisplayFruit() {
         </ul>
       </section>
       {modal ? (
-        <section className="update-container">
+        <section className="update-cont">
           <div className="update-todo-data">
             <p onClick={closeHandler} className="close">
               &times;

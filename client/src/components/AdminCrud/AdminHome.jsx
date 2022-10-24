@@ -1,33 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./AdminHome.css"
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const AdminHome = () => {
 
-    return (
+  return (
     <>
-        <ul className="list1">
-        <li className="list2"><Link to={"/add-list"} onClick = "/mobiles/api/productapp" className="list2" style={{ textDecoration: "none" , textalign:"center", }} >MOBILES</Link></li>
-        
-        <div class="list2">
-          <button class="list2btn">GROCERY <i class="fa fa-caret-down"></i></button>
-          <div class="list2-content">
-            <a onClick = "/fruits/api/fruitapp" href="/createfruit">FRUITS</a><br></br>
-            <a onClick = "/grocery/api/vegetableapp" href="/createvegetable"> VEGETABLES</a>
-          </div>
-        </div>
-        
-        <div class="list2">
-          <button class="list2btn">ELECTRONICS <i class="fa fa-caret-down"></i></button>
-          <div class="list2-content">
-            <a onClick = "/electronics/api/laptopapp" href="/createlaptop">LAPTOPS</a><br></br>
-            <a onClick = "/electronics/api/chargerapp" href="/createcharger">CHARGERS</a> <br></br>
-            <a onClick = "/electronics/api/audioapp" href="/createaudio">AUDIO</a>
-          </div>
-        </div>
+    <div className="home">
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <ul className="ahome">
+        <a class="btn2" onClick="/mobiles/api/productapp" href="/add-list" variant="success" role="button">Mobiles</a>
+        <br></br><br></br><br></br>
+        <br></br><br></br>
+
+        <Dropdown>
+          <Dropdown.Toggle variant="danger" id="dropdown-basic">
+            Grocery
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item onClick="/grocery/api/fruitapp" href="/createfruit">Fruits</Dropdown.Item>
+            <Dropdown.Item onClick="/grocery/api/vegetableapp" href="/createvegetable">Vegetables</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+
+
+        <br></br><br></br><br></br><br></br>
+        <Dropdown>
+          <Dropdown.Toggle variant="warning" id="dropdown-basic" class="btn btn-secondary dropdown-toggle">
+            Electronics
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item onClick="/electronics/api/laptopapp" href="/createlaptop">Laptops</Dropdown.Item>
+            <Dropdown.Item onClick="/electronics/api/audioapp" href="/createaudio">Audio</Dropdown.Item>
+            <Dropdown.Item onClick="/electronics/api/chargerapp" href="/createcharger">Chargers</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+        <br></br>
       </ul>
-      </>
-     
-    );
+      </div>
+    </>
+  );
 }
 
 export default AdminHome;

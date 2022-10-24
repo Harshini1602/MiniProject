@@ -1,6 +1,6 @@
 import React from "react";
 
-const ChargerList = ({ chargerInfos, buynow, addtocart }) => {
+const ChargerList = ({ chargerInfos, editHandler, deleteHandler }) => {
   const { _id, name, description, price } = chargerInfos;
 
   return (
@@ -14,12 +14,12 @@ const ChargerList = ({ chargerInfos, buynow, addtocart }) => {
 
       </div>
       <h1></h1>
-      <div className="todo-btn-container">
-        <button className="todo-btn" name={_id} onClick={buynow}>
-        BUY NOW
+      <div className="todo-btn-cont">
+        <button className="todo-btn" name={_id} onClick={editHandler}>
+          🖊️
         </button>
-        <button className="todo-btn" name={_id} onClick={addtocart}>
-          ADD TO CART
+        <button className="todo-btn" name={_id} onClick={deleteHandler}>
+          🗑️
         </button>
       </div>
       

@@ -59,7 +59,7 @@ export function DisplayCharger() {
         LOGOUT
       </button>
     </nav>
-    <section className="container">
+    <section className="cont">
       <Link to="/createcharger" className="button-new">
         <button className="todo-btn">➕ ADD NEW CHARGER PRODUCT</button>
       </Link>
@@ -77,7 +77,7 @@ export function DisplayCharger() {
         </ul>
       </section>
       {modal ? (
-        <section className="update-container">
+        <section className="update-cont">
           <div className="update-todo-data">
             <p onClick={closeHandler} className="close">
               &times;

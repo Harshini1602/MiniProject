@@ -26,7 +26,7 @@ export function Mobiles() {
   );
   
   return (
-    <section className="container">
+    <section className="cont">
       
       <section className="todo-data">
         <h1></h1>

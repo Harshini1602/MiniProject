@@ -1,9 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
-import "./style1.css"
 
 function UpdateProduct({ _id, closeHandler, updateHandler }) {
-  const [productInfo, setProductInfo] = useState({ name: "", description: "", price: "", image: "" });
+  const [productInfo, setProductInfo] = useState({ name: "", description: "", price: ""});
 
   const handleChange = (e) => {
     setProductInfo((data) => ({ ...data, [e.target.name]: e.target.value }));
@@ -15,7 +14,7 @@ function UpdateProduct({ _id, closeHandler, updateHandler }) {
     axios
       .put(`http://localhost:4000/mobiles/api/productapp/${_id}`, productInfo)
       .then((res) => {
-        setProductInfo({ name: "", description: "", price: "", image: "" });
+        setProductInfo({ name: "", description: "", price: ""});
       })
       .catch((err) => {
         console.error(err);
@@ -24,7 +23,7 @@ function UpdateProduct({ _id, closeHandler, updateHandler }) {
 
   return (
     <form
-      className="form-container"
+      className="form-cont"
       onSubmit={(e) => {
         submitHanlder(e);
         updateHandler();
@@ -56,17 +55,6 @@ function UpdateProduct({ _id, closeHandler, updateHandler }) {
       <input
         type="text"
         name="price"
-        className="input"
-        onChange={handleChange}
-      />
-
-      <label htmlFor="image" className="label">
-        PRODUCT IMAGE
-      </label>
-      <input
-        type="file"
-        name="image"
-        accept=".png, .jpg, .jpeg"
         className="input"
         onChange={handleChange}
       />

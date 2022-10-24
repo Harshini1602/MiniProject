@@ -14,12 +14,12 @@ const VegetablesList = ({ VegetableInfos, buynow, addtocart }) => {
 
       </div>
       <h1></h1>
-      <div className="todo-btn-container">
+      <div className="todo-btn-cont">
         <button className="todo-btn" name={_id} onClick={buynow}>
-        buynow
+        BUY NOW
         </button>
         <button className="todo-btn" name={_id} onClick={addtocart}>
-          addtocart
+        ADD TO CART
         </button>
       </div>
       

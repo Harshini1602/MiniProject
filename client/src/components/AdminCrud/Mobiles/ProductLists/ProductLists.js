@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProductLists = ({ productInfos, editHandler, deleteHandler }) => {
-  const { _id, name, description, price, image} = productInfos;
+  const { _id, name, description, price} = productInfos;
 
   return (
     <li key={_id}>
@@ -11,11 +11,9 @@ const ProductLists = ({ productInfos, editHandler, deleteHandler }) => {
         <p>{description}</p>
         <h1></h1>
         <h2>{price}</h2>
-        <h1></h1>
-        <h2>{image}</h2>
       </div>
       <h1></h1>
-      <div className="todo-btn-container">
+      <div className="todo-btn-cont">
         <button className="todo-btn" name={_id} onClick={editHandler}>
           🖊️
         </button>
